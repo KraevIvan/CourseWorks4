@@ -1,7 +1,8 @@
 from src.saver import JSONSaver
 from src.parser import HH
 from src.vacancy import Vacancy
-import os, time
+import os
+import time
 
 endl = '\n'
 
@@ -10,7 +11,7 @@ def clear_console():
     '''
     почисти консоль
     '''
-    os.system('clear')
+    os.system('cls' if os.name=='nt' else 'clear')
 
 
 def class_to_dict(obj):
